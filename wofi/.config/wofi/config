@@ -1,0 +1,24 @@
+# Display mode: choices are drun, run, or dmenu
+show=drun
+
+# Window Layout
+width=600
+height=600
+location=center
+orientation=vertical
+
+# Behavior
+prompt=Search applications...
+allow_markup=true
+allow_images=true
+image_size=40
+
+# Features and performance
+insensitive=true
+hide_scroll=false
+no_actions=true
+print_command=true
+
+# Mode specific options
+drun-print_desktop_file=false
+

@@ -1,0 +1,143 @@
+* {
+    font-family: "FiraCode Nerd Font","JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+    font-size: 17;
+    min-height: 0;
+}
+tooltip {
+    background:#2E2D3C;
+    border: 1px solid rgba(137, 180, 250, 0.5);
+    border-radius: 10px;
+    padding: 2px;
+}
+
+tooltip label {
+    color: #cdd6f4;
+    padding: 6px 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background: rgba(30, 30, 46, 0);
+    color: #cdd6f4;
+}
+
+#workspaces {
+    padding: 0 10px;
+    margin: 4px 4px;
+    background:#2E2D3C;
+    border-radius: 10px;
+    color: #cdd6f4;
+    font-weight: bold;
+}
+#workspaces button {
+    padding: 5px 8px;
+    color: #cdd6f4;
+    background: rgba(49, 50, 68, 0.6);
+    border-radius: 8px;
+}
+
+#workspaces button.focused {
+    color: #89b4fa;
+    background: rgba(137, 180, 250, 0.4);
+}
+#workspaces button:hover {
+    background: rgba(137, 180, 250, 0.1);
+}
+
+#window,
+#clock,
+#power-profiles-daemon,
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio,
+#bluetooth,
+#idle_inhibitor,
+#custom-power,
+#tray {
+    padding: 0 10px;
+    margin: 4px 3px;
+    background:#2E2D3C;
+    border-radius: 10px;
+    color: #cdd6f4;
+}
+#cpu {
+    padding: 5px 8px;
+    background:#2E2D3C;
+    font-weight: bold;
+    color: #C0D8EE;
+    border-radius: 10px;
+}
+#custom-power {
+    padding: 5px 8px;
+    background:#2E2D3C;
+    font-weight: bold;
+    color: #C0D8EE;
+    border-radius: 10px;
+}
+
+#network{
+    background:#2E2D3C;
+    font-weight: bold;
+    color: #C0D8EE;
+    border-radius: 10px;
+}
+#memory{
+    background:#2E2D3C;
+    font-weight: bold;
+    color: #C0D8EE;
+    border-radius: 10px;
+}
+#clock {
+    font-weight: bold;
+    background:#2E2D3C;
+    color: #f9e2af;
+    border-radius: 10px;
+}
+#battery {
+    font-weight: bold;
+    background:#2E2D3C;
+    color: #C0D8EE;
+    border-radius: 10px;
+}
+
+#idle_inhibitor {
+    font-weight: bold;
+    background:#2E2D3C;
+    color: #C0D8EE;
+    border-radius: 10px;
+}
+
+#battery.warning {
+    color: #fab387;
+}
+
+#battery.critical {
+    color: #f38ba8;
+}
+
+#network.disconnected {
+    color: #f38ba8;
+}
+
+#pulseaudio {
+    font-weight: bold;
+    background:#2E2D3C;
+    color: #C0D8EE;
+    border-radius: 10px;
+}
+
+#power-profiles-daemon.performance{
+    color: yellow;
+    font-weight: bold;
+}
+#power-profiles-daemon.balanced{
+    color: #C0D8EE;
+    font-weight: bold;
+}
+#power-profiles-daemon.power-saver{
+    color: green;
+    font-weight: bold;
+}

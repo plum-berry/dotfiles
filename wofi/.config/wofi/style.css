@@ -1,0 +1,57 @@
+/* Window background and border */
+window {
+    margin: 0px;
+    border: 2px solid #7aa2f7;
+    border-radius: 12px;
+    background-color: #1a1b26;
+    font-family: "JetBrains Mono", "monospace";
+    font-size: 14px;
+}
+
+/* Inner layout container */
+#outer-box {
+    margin: 10px;
+    border: none;
+}
+
+/* Search input entry field */
+#input {
+    margin: 5px;
+    border: 1px solid #414868;
+    border-radius: 6px;
+    padding: 8px;
+    background-color: #24283b;
+    color: #c0caf5;
+}
+
+#input:focus {
+    border: 1px solid #7aa2f7;
+}
+
+/* Scrollable container for application matches */
+#scroll {
+    margin: 5px;
+    border: none;
+}
+
+/* Individual list item rows */
+#text {
+    margin: 5px;
+    color: #a9b1d6;
+}
+
+#entry {
+    padding: 6px;
+    border-radius: 6px;
+}
+
+/* Hover and Keyboard selection styling */
+#entry:selected {
+    background-color: #7aa2f7;
+}
+
+#entry:selected #text {
+    color: #1a1b26;
+    font-weight: bold;
+}
+

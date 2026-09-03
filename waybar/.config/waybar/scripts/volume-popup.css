@@ -1,0 +1,14 @@
+/* ~/.config/waybar/scripts/volume-popup.css, loaded via Gtk.CssProvider */
+window.volume-popup {
+    background-color: rgba(30, 30, 46, 0.9);
+    border-radius: 14px;
+    border: 1px solid rgba(137, 180, 250, 0.4);
+}
+scale trough {
+    min-height: 6px;
+    border-radius: 3px;
+}
+scale highlight {
+    background-color: #89b4fa;
+    border-radius: 3px;
+}
