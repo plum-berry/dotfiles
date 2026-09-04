@@ -280,11 +280,12 @@ bindsym $mod+F3 input "type:touchpad" events toggle enabled disabled
 
 # Configing Wofi
 layer_effects "wofi" {
-    opacity 0.8;
     blur enable;
-    blur_xray enable;
+    blur_xray disable;
     blur_ignore_transparent enable;
 }
+
+
 layer_effects "volume-popup" {
     blur enable;
     shadows enable;

@@ -3,8 +3,10 @@ window {
     margin: 0px;
     border: 2px solid #7aa2f7;
     border-radius: 12px;
-    background-color: #1a1b26;
-    font-family: "JetBrains Mono", "monospace";
+ 
+    background-color:  rgba(30, 30, 46, 0.7);
+
+    font-family:"JetBrains Mono", "monospace";
     font-size: 14px;
 }
 
@@ -37,6 +39,7 @@ window {
 /* Individual list item rows */
 #text {
     margin: 5px;
+    font-weight: bolder;
     color: #a9b1d6;
 }
 
@@ -48,6 +51,7 @@ window {
 /* Hover and Keyboard selection styling */
 #entry:selected {
     background-color: #7aa2f7;
+    font-weight: bold;
 }
 
 #entry:selected #text {
