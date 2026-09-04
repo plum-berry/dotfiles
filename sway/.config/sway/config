@@ -29,7 +29,7 @@ gaps outer 5
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/plum/Pictures/bg-pics/Frieren_sleeping.jpeg fill
+exec waypaper --restore
 output * resolution 1920x1080
 for_window [app_id="kitty"] opacity 0.8
 for_window [app_id="wofi"] opacity 0.8

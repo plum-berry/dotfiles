@@ -70,8 +70,21 @@ window#waybar {
     color: #C0D8EE;
     border-radius: 10px;
 }
-#custom-power {
+#bluetooth {
     padding: 5px 8px;
+    background:#2E2D3C;
+    font-weight: bold;
+    color: #C0D8EE;
+    border-radius: 10px;
+}
+#idle_inhibitor {
+    padding: 5px 8px;
+    background:#2E2D3C;
+    font-weight: bold;
+    color: #C0D8EE;
+    border-radius: 10px;
+}
+#custom-power {
     background:#2E2D3C;
     font-weight: bold;
     color: #C0D8EE;
