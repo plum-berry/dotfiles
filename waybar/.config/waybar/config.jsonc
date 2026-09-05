@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 34,
+    "height": 42,
     "spacing": 4,
 
     "modules-left": ["sway/workspaces", "tray","bluetooth","sway/mode","idle_inhibitor"],

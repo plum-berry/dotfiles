@@ -81,6 +81,10 @@ blur_radius 5
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
+# Update D-Bus environment variables on startup
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+
 ### Input configuration
 #
 # Example configuration:
@@ -270,6 +274,7 @@ bindsym $mod+r mode "resize"
 # Read `man 5 sway-bar` for more information about this section.
 # Input key remappings
 
+
 input "type:keyboard" {
     xkb_options caps:swapescape
 }
@@ -292,6 +297,7 @@ layer_effects "volume-popup" {
     corner_radius 14;
 }
 
+
 # Cursor theme
 seat seat0 xcursor_theme Bibata-Modern-Classic 24
 
@@ -302,11 +308,12 @@ bindsym $mod+Print exec flameshot gui
 # Audio reload
 bindsym $mod+F1 exec systemctl --user restart wireplumber pipewire pipewire-pulse
 
+include ~/.cache/wal/colors-sway
 # Window border coloars
-client.focused #4c7889 #285577 #ffffffff #1f75d1 #1f75d1  
+client.focused #4c7889 #285577 #ffffffff $color4 $color4
 
 
 # Wallpaper changer
 bindsym $mod+p exec waypaper
-
+bindsym $mod+shift+p exec waypaper --random
 include ~/.config/sway/config.d/* 

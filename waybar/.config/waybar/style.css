@@ -1,48 +1,52 @@
+@import url("/home/plum/.cache/wal/colors-waybar.css");
+
+
 * {
     font-family: "FiraCode Nerd Font","JetBrainsMono Nerd Font", "Font Awesome 6 Free";
-    font-size: 17;
+    font-size: 17px;
     min-height: 0;
 }
 tooltip {
-    background:#2E2D3C;
-    border: 1px solid rgba(137, 180, 250, 0.5);
+    background:@background;
+    border: 1px solid @color6;
     border-radius: 10px;
     padding: 2px;
 }
 
 tooltip label {
-    color: #cdd6f4;
+    color: @color6;
     padding: 6px 10px;
     font-size: 15px;
     font-weight: bold;
 }
 
 window#waybar {
-    background: rgba(30, 30, 46, 0);
-    color: #cdd6f4;
+    background: rgba(30,30,36,0);
+    color: @foreground;
 }
 
 #workspaces {
     padding: 0 10px;
-    margin: 4px 4px;
-    background:#2E2D3C;
+    margin: 4px 0px;
+    background: inherit;
     border-radius: 10px;
-    color: #cdd6f4;
+    color: @foreground;
     font-weight: bold;
 }
 #workspaces button {
     padding: 5px 8px;
-    color: #cdd6f4;
-    background: rgba(49, 50, 68, 0.6);
+    margin: 0 2px;
+    color: @foreground;
+    background: @color8;
     border-radius: 8px;
 }
 
 #workspaces button.focused {
-    color: #89b4fa;
-    background: rgba(137, 180, 250, 0.4);
+    color: @foreground;
+    background: @color4;
 }
 #workspaces button:hover {
-    background: rgba(137, 180, 250, 0.1);
+    background: @color3;
 }
 
 #window,
@@ -59,67 +63,61 @@ window#waybar {
 #tray {
     padding: 0 10px;
     margin: 4px 3px;
-    background:#2E2D3C;
+    background:@background;
     border-radius: 10px;
-    color: #cdd6f4;
+    color: @foreground;
 }
 #cpu {
     padding: 5px 8px;
-    background:#2E2D3C;
+    background:@background;
     font-weight: bold;
-    color: #C0D8EE;
+    color: @color6;
     border-radius: 10px;
 }
 #bluetooth {
     padding: 5px 8px;
-    background:#2E2D3C;
+    background:@background;
     font-weight: bold;
-    color: #C0D8EE;
+    color: @color6; 
     border-radius: 10px;
 }
-#idle_inhibitor {
-    padding: 5px 8px;
-    background:#2E2D3C;
-    font-weight: bold;
-    color: #C0D8EE;
-    border-radius: 10px;
-}
+
 #custom-power {
-    background:#2E2D3C;
+    background: @background;
     font-weight: bold;
-    color: #C0D8EE;
+    color: @color6;
     border-radius: 10px;
 }
 
 #network{
-    background:#2E2D3C;
+    background:@background;
     font-weight: bold;
-    color: #C0D8EE;
+    color: @color6;
     border-radius: 10px;
 }
 #memory{
-    background:#2E2D3C;
+    background:@background;
     font-weight: bold;
-    color: #C0D8EE;
+    color: @color6;
     border-radius: 10px;
 }
 #clock {
     font-weight: bold;
-    background:#2E2D3C;
-    color: #f9e2af;
+    background:@background;
+    color: @color4;
     border-radius: 10px;
 }
 #battery {
     font-weight: bold;
-    background:#2E2D3C;
-    color: #C0D8EE;
+    background:@background;
+    color: @color6;
     border-radius: 10px;
 }
 
 #idle_inhibitor {
     font-weight: bold;
-    background:#2E2D3C;
-    color: #C0D8EE;
+    background:@background;
+    color: @color6;
     border-radius: 10px;
 }
 
@@ -137,20 +135,20 @@ window#waybar {
 
 #pulseaudio {
     font-weight: bold;
-    background:#2E2D3C;
-    color: #C0D8EE;
+    background:@background;
+    color: @color6;
     border-radius: 10px;
 }
 
 #power-profiles-daemon.performance{
-    color: yellow;
+    color: @color6;
     font-weight: bold;
 }
 #power-profiles-daemon.balanced{
-    color: #C0D8EE;
+    color: @color6;
     font-weight: bold;
 }
 #power-profiles-daemon.power-saver{
-    color: green;
+    color: @color6;
     font-weight: bold;
 }

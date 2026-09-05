@@ -1,3 +1,5 @@
+@import "/home/plum/.cache/wal/colors-wlogout.css";
+
 * {
 	background-image: none;
 	box-shadow: none;
@@ -10,7 +12,7 @@ window {
 button {
     border-radius: 15px;
     margin: 10px;
-    border-color: #2E2D3C;
+    border-color: @color6;
 	text-decoration-color: #FFFFFF;
     color: #C0D8EE;
 	background-color: rgba(46, 45, 60, 0.5);
@@ -22,9 +24,9 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: #2596be;
+	background-color: @color4;
 	outline-style: none;
-    border-color: #C0D8EE;
+    border-color: @color4;
 }
 
 #lock {
